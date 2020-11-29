@@ -1,1 +1,154 @@
-/* font-family: 'Manrope', sans-serif; */
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* ===================
+	Global
+================= */
+:root {
+	--d-gray-blue: hsl(217, 19%, 35%);
+	--d-blue: hsl(214, 17%, 51%);
+	--gray-blue: hsl(212, 23%, 69%);
+	--l-gray-blue: hsl(210, 46%, 95%);
+}
+
+body {
+	font-family: 'Manrope', sans-serif;
+	line-height: 1.5; 
+	background: var(--l-gray-blue);
+	margin-top: 10vmax;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	color: inherit;
+}
+
+.body-text h3,
+.name,
+.fa-share {
+	color: var(--d-gray-blue);
+}
+
+p {
+	color: var(--gray-blue);
+}
+
+
+/* ===================
+	card body
+================= */
+.container {
+	width: 90%;
+	margin: auto;
+	background: white;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.hero-img {
+	width: 100%;
+	height: 260px;
+	object-fit: cover;
+	object-position: center -25px;
+}
+
+.card-body {
+	padding: 2rem 2rem 0;
+	position: relative;
+}
+
+.body-text p {
+	margin: 1.2em 0 1.5em;
+	color: var(--gray-blue);
+}
+
+.share-popup {
+	background: var(--d-gray-blue);
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	padding: 1.5rem 2rem;
+	display: flex;
+	align-items: center;
+}
+
+.share-popup p {
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	font-size: .9rem;
+}
+
+.share-popup i {
+	font-size: 1.5rem;
+	margin-left: .7em;
+	color: white;
+	transition: .2s;
+}
+
+.fa-facebook-square:hover {
+	color: #4867AA;
+}
+
+.fa-twitter:hover {
+	color: #50ABF1;
+}
+
+.fa-pinterest:hover {
+	color: #C21E25;
+}
+
+
+/* ===================
+	card footer
+================= */
+.card-footer {
+	padding: .5rem 0 .8rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.profile {
+	flex: 1;
+}
+
+.avatar {
+	width: 50px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 1rem;
+}
+
+.name {
+	margin-top: .5em;
+}
+
+.date {
+	font-size: .8rem;
+}
+
+.fa-share {
+	background: var(--l-gray-blue);
+	padding: .5em;
+	border-radius: 50%;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.shareBtn-click {
+	color: white;
+	background: var(--d-blue);
+}
+
+.attribution {
+	margin-top: 10vmax;
+}
