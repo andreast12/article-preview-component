@@ -83,7 +83,11 @@ p {
 	padding: 1.6rem 2rem;
 	display: flex;
 	align-items: center;
-	transition: transform .2s;
+	transition: transform .3s;
+}
+
+.popup-animation {
+	transform: translateY(-100%);
 }
 
 .share-popup p {
@@ -93,7 +97,7 @@ p {
 }
 
 .share-popup a {
-	margin-left: 1.5rem;
+	margin-left: 1rem;
 }
 
 .share-popup i {
@@ -211,6 +215,14 @@ p {
 		top: 98%;
 		left: 50%;
 		transform: translateX(-50%);
+	}
+
+	.popup-animation {
+		transform: scale(1);
+	}
+
+	.share-popup a {
+		margin-left: 1.5rem;
 	}
 
 	.attribution {
